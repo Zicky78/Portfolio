@@ -8,8 +8,12 @@ body {
     
 }
 
-h2, h3, h4, h5, a, p {
+h1, h2, h3, h4, h5, a, p {
     color: white;
+}
+
+h1 {
+    font-size: 28px;
 }
 
 a:hover, a:visited {
@@ -25,19 +29,31 @@ h4 {
     align-self: flex-start;
 }
 
-img {
-    height: 240px;
-    width: 240px;
-    border: 2px solid rgb(0, 0, 0);
+.img-thumbnail {
+    max-width: 75%;
 }
 
 .header {
     display: flex;
-    justify-content: center;
-    padding-top: 2.5%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.code {
+    background-color: rgba(51, 51, 51, 0.733);
+    padding: 20px;
+    border-radius: 10px;
+}
+.code-headings {
+    font-size: 22px;
 }
 
 .about-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.story-wrapper {
     display: flex;
     justify-content: center;
 }
@@ -53,7 +69,16 @@ img {
     padding: 20px;
 }
 
-
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: left;
+    background-color: rgba(51, 51, 51, 0.733);
+    width: 90%;
+    border-radius: 20px;
+    padding: 20px;
+}
 
 .btn, .btn-default {
     background-color: rgba(51, 51, 51, 0.781);
@@ -88,17 +113,21 @@ img {
     background-color: rgba(51, 51, 51, 0.76);
     padding: 30px;
     width: 90%;
+    border-radius: 10px;
     
 }
 
 #project-header {
-    padding: 20px;
+    padding-bottom: 20px;
     text-decoration: underline;
 }
 
 @media (min-width: 786px) {
     .about-content {
-        width: 60%;
+        width: 75%;
+    }
+    .contact-content {
+        width: 75%;
     }
     .column-wrapper {
         flex-direction: row;
@@ -109,5 +138,15 @@ img {
     .column {
         width: 30%;
         
+    }
+    .contact {
+        display: flex;
+
+    }
+    h1 {
+        font-size: 36px;
+    }
+    .code-headings {
+        font-size: 36px;
     }
  }
